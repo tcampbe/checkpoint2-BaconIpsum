@@ -18,7 +18,7 @@ html {
     list-style-type: none;
 }
 
-.nav {
+.nav a {
     color: rgb(240,241,243);
     font-size: 125%;
 }
@@ -36,6 +36,12 @@ html {
     width: 50%;
     position: relative;
     margin: auto;
+}
+
+.articles a {
+    text-decoration: none;
+    color: rgb(27,27,27);
+    font-family: 'Assistant', sans-serif;
 }
 
 .article {
@@ -63,14 +69,68 @@ h3 {
     margin-bottom: 1em;
 }
 
+span {
+    text-decoration: underline;
+}
+
+.links {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 10%;
+    background: rgb(27,27,27);
+}
+
+.link {
+    padding: 1em;
+}
+
+.link a { 
+    color: rgb(240,241,243);
+}
+
 
 @media (min-width: 576px) {
+    html, body {
+        height: 100%;
+    }
+
+    .headbar {
+        height: 25em;
+    }
+
+    .header {
+        transform: translateY(90%);
+        font-size: 350%;
+    }
+
+    .articles {
+        text-align: center;
+    }
+
+    .article {
+        display: inline-block;
+        height: 17em;
+        width: 10em;
+        font-size: 200%;
+        padding-left: 1em;
+    }
+
+    .links {
+        font-size: 250%;
+        padding: .1em;
+    }
+
+    .link {
+        padding: .5em;
+    }
 
   }
 
 @media (min-width: 992px) {
     html {
-        height: 100%;
+        height: 110%;
     }
     body {
         display: flex;
@@ -118,4 +178,12 @@ h3 {
         padding-top: 10%;
     }
 
+    .links {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .links a {
+        font-size: 50%;
+    }
  }
