@@ -1,0 +1,189 @@
+html {
+    display: inline-block;
+    width: 99.9%;;
+}
+
+.headbar {
+    background: rgba(51,168,221,0.9);
+    height: 16em;
+    width: 100%;
+    position: relative;
+}
+
+.navs {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-evenly;    
+    padding-bottom: 1em;
+    list-style-type: none;
+}
+
+.nav a {
+    color: rgb(240,241,243);
+    font-size: 125%;
+}
+
+.header {
+    color: rgb(240,241,243);
+    width: 100%;
+    text-align: center;
+    font-size: 300%;
+    transform: translateY(20%);
+}
+
+.articles {
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+    margin: auto;
+}
+
+.articles a {
+    text-decoration: none;
+    color: rgb(27,27,27);
+    font-family: 'Assistant', sans-serif;
+}
+
+.article {
+    text-align: center;
+}
+
+.one h2 {
+    background: rgba(51,168,221,0.9);    
+    height: 2em;
+}
+
+.two h2 {
+    background: rgba(244,103,49,0.9);
+    height: 2em;
+}
+
+.three h2 {
+    background: rgba(43,205,192,0.9);    
+    height: 2em;
+}
+
+h3 {
+    font-size: 150%;
+    height: 1em;
+    margin-bottom: 1em;
+}
+
+span {
+    text-decoration: underline;
+}
+
+.links {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 10%;
+    background: rgb(27,27,27);
+}
+
+.link {
+    padding: 1em;
+}
+
+.link a { 
+    color: rgb(240,241,243);
+}
+
+
+@media (min-width: 576px) {
+    html, body {
+        height: 100%;
+    }
+
+    .headbar {
+        height: 25em;
+    }
+
+    .header {
+        transform: translateY(90%);
+        font-size: 350%;
+    }
+
+    .articles {
+        text-align: center;
+    }
+
+    .article {
+        display: inline-block;
+        height: 17em;
+        width: 10em;
+        font-size: 200%;
+        padding-left: 1em;
+    }
+
+    .links {
+        font-size: 250%;
+        padding: .1em;
+    }
+
+    .link {
+        padding: .5em;
+    }
+
+  }
+
+@media (min-width: 992px) {
+    html {
+        height: 110%;
+    }
+    body {
+        display: flex;
+        flex-flow: column nowrap;
+        height: 100%;
+        width: 100%;
+    }
+    .headbar {
+        background: rgb(43,205,192);
+        height: 50%;
+    }
+
+    br {
+        display: none;
+    }
+
+    .header {
+        font-size: 400%;
+        transform: translateY(200%);
+
+    }
+
+    .articles {
+        background: rgb(27,27,27);
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+    }
+
+    .article {
+        color: rgb(240,241,243);
+        margin: 2em;
+        width: 9.5em;
+        font-size: 130%;
+    }
+
+    h2 {
+        height: 1.5em;
+    }
+
+    h3 {
+        font-size: 225%;
+        padding-top: 10%;
+    }
+
+    .links {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .links a {
+        font-size: 50%;
+    }
+ }
